@@ -5,7 +5,8 @@ Sept 6, 2019 : Add 3 Possible projects
 Change the behaviour to have them the return ENOMEM : Callers must be able to handle this return versus them sliently sleeping
 a) .. skbuff file reviews / mods
 ./include/linux/skbuff.h : internally uses GF_ATOMIC, but no GFP_KERNEL : has standard link list struct
-                            What is performance improvrement if we support a faster lookup ,,, do we have a incr or decr order of items?
+                            What is performance improvrement if we support a faster lookup ,,, do we have a incr or decr order of items
+b)
                             
 2) Prime Number scaling : Removes large resource consumption with large power of two's
 3) Timer windown: timeouts are now coarser due to fixing cascade issue, but how to we support fine grained or real-time timeouts
